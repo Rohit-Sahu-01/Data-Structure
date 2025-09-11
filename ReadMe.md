@@ -1,6 +1,6 @@
-# Data Structures & Algorithms in C++ 🚀
+# Data Structures & Algorithms in Java 🚀
 
-This is my personal repository to practice and implement **Data Structures and Algorithms (DSA)** in **C++**.  
+This is my personal repository to practice and implement **Data Structures and Algorithms (DSA)** in **Java**.  
 It covers problems and concepts from **basic to advanced** for learning and interview preparation.  
 
 ---
@@ -20,7 +20,7 @@ It covers problems and concepts from **basic to advanced** for learning and inte
 
 ## ✨ Features
 - ✅ Beginner to Advanced roadmap  
-- ✅ Clean and modular **C++ code**  
+- ✅ Clean and modular **Java code**  
 - ✅ Example problems with solutions  
 - ✅ Interview-focused problem sets  
 - ✅ Organized folder structure  
