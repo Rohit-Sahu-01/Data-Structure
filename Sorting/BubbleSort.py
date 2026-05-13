@@ -1,3 +1,5 @@
+# Algorithm: Bubble Sort
+
 print("Bubble Sort Algorithm")
 
 arr=[64, 34, 25, 12, 22, 11, 90];
