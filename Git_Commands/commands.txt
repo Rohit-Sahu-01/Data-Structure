@@ -1,0 +1,295 @@
+========================================
+        GIT COMMANDS CHEAT SHEET
+========================================
+
+1. git init
+----------------------------------------
+Used to create a new Git repository.
+
+Basic Syntax:
+git init
+
+Variations / Parameters:
+
+git init
+    Initialize repo in current folder
+
+git init myproject
+    Create folder + initialize repo
+
+git init --bare
+    Create bare repository
+
+git init --initial-branch=main
+    Set default branch name
+
+git init --shared
+    Shared repository
+
+
+Examples:
+
+Initialize current folder:
+mkdir demo
+cd demo
+
+git init
+
+
+Create folder + initialize repo:
+git init DSA
+
+
+Initialize with main branch:
+git init --initial-branch=main
+
+
+========================================
+2. git add
+========================================
+
+Used to move files from:
+Working Directory -> Staging Area
+
+Syntax:
+git add <file>
+
+
+Variations / Parameters:
+
+git add file.txt
+    Add single file
+
+git add .
+    Add all files
+
+git add -A
+    Add all changes
+
+git add *
+    Add non-hidden files
+
+git add folder/
+    Add folder
+
+git add *.py
+    Add all Python files
+
+git add -u
+    Add modified tracked files
+
+git add -p
+    Interactive add
+
+git add --all
+    Same as -A
+
+
+Examples:
+
+Add single file:
+git add app.py
+
+
+Add everything:
+git add .
+
+
+Add Python files:
+git add *.py
+
+
+Interactive add:
+git add -p
+
+
+========================================
+3. git status
+========================================
+
+Shows current repository status.
+
+Syntax:
+git status
+
+
+Variations / Parameters:
+
+git status
+    Full status
+
+git status -s
+    Short status
+
+git status --short
+    Same as -s
+
+git status -b
+    Show branch info
+
+git status --ignored
+    Show ignored files
+
+
+Examples:
+
+Full status:
+git status
+
+
+Example Output:
+modified: app.py
+untracked: test.py
+
+
+Short status:
+git status -s
+
+
+Output:
+M  app.py
+?? test.py
+
+
+Meaning:
+
+M
+    Modified
+
+A
+    Added
+
+D
+    Deleted
+
+??
+    Untracked
+
+
+========================================
+4. git commit
+========================================
+
+Used to save staged changes.
+
+Syntax:
+git commit -m "message"
+
+
+Variations / Parameters:
+
+git commit -m "msg"
+    Commit with message
+
+git commit -am "msg"
+    Add tracked files + commit
+
+git commit --amend
+    Modify last commit
+
+git commit --amend -m "new msg"
+    Change commit message
+
+git commit -v
+    Show diff
+
+git commit --no-edit
+    Reuse old message
+
+git commit --author="Name <mail>"
+    Custom author
+
+
+Examples:
+
+Normal commit:
+git commit -m "Added heap sort"
+
+
+Commit tracked files directly:
+git commit -am "Updated quick sort"
+
+NOTE:
+Does NOT add new untracked files.
+
+
+Change last commit message:
+git commit --amend -m "Fixed heap sort logic"
+
+
+========================================
+COMPLETE FLOW EXAMPLE
+========================================
+
+Step 1: Create project
+mkdir DSA
+cd DSA
+
+
+Step 2: Initialize Git
+git init
+
+
+Step 3: Create file
+touch heap.py
+
+
+Step 4: Check status
+git status
+
+
+Output:
+Untracked files:
+    heap.py
+
+
+Step 5: Add file
+git add heap.py
+
+
+Step 6: Commit
+git commit -m "Added heap sort implementation"
+
+
+========================================
+GIT AREAS UNDERSTANDING
+========================================
+
+Working Directory
+       ↓ git add
+
+Staging Area
+       ↓ git commit
+
+Local Repository
+       ↓ git push
+
+GitHub
+
+
+========================================
+MOST COMMON COMMANDS
+========================================
+
+git status
+git add .
+git commit -m "message"
+git push origin main
+git pull origin main
+
+
+========================================
+IMPORTANT DIFFERENCE
+========================================
+
+git init
+    Start repository
+
+git add
+    Stage changes
+
+git status
+    Check repository state
+
+git commit
+    Save snapshot
